@@ -1,0 +1,18 @@
+sudo: false
+language: python
+python:
+  - 3.6
+  - 3.7
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
+install:
+  - pip install poetry
+  - poetry install -vvv
+script:
+  - poetry run pytest -v
+  - poetry run coverage run --source=ddmc_apitest -m pytest -v
+after_success:
+  - poetry run coveralls

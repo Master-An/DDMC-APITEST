@@ -1,0 +1,4 @@
+- ` poetry add requests pytest`
+- `poetry add coverage`
+- `poetry run coverage report`
+- `poetry add coveralls`

@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ddmc-apitest"
+version = "0.1.0"
+description = ""
+authors = ["安思琪 <ansiqi@100me.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.25.1"
+pytest = "^6.2.3"
+coverage = "^5.5"
+coveralls = "^3.0.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
